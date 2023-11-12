@@ -29,12 +29,12 @@ jobs:
       run: |
         python -m pytest -v tests
 
-    - name: Build coverage file
-        run: |
-          pytest --cov=week1-devops tests/ | tee pytest-coverage.txt
+    # - name: Build coverage file
+    #   run: |
+    #     pytest --cov=week1-devops tests/ | tee pytest-coverage.txt
 
     - name: Pytest Coverage Comment
       id: coverageComment
-      uses: nehasaha/week1-devops@main
+      uses: week1-devops@main
       with: 
         pytest-coverage-path: ./pytest-coverage.txt
