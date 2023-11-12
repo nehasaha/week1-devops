@@ -30,6 +30,7 @@ jobs:
         python -m pytest -v tests
 
     - name: Pytest Coverage Comment
+      id: coverageComment
       uses: nehasaha/week1-devops@main
       with: 
         pytest-coverage-path: ./pytest-coverage.txt
