@@ -34,7 +34,7 @@ jobs:
     #     pytest --cov=week1-devops tests/ | tee pytest-coverage.txt
 
     - name: Pytest Coverage Comment
-      id: coverageComment
-      uses: nehasaha/week1-devops@main
+      # id: coverageComment
+      # uses: nehasaha/week1-devops@main
       with: 
         pytest-coverage-path: ./pytest-coverage.txt
