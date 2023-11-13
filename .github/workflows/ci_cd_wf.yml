@@ -27,7 +27,7 @@ jobs:
 
     - name: Run Tests
       run: |
-        python -m pytest -v tests
+        python -m pytest -v tests --cov | tee pytest-coverage.txt
 
     # - name: Build coverage file
     #   run: |
